@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela Multiplicacao</title>
+    <title>Multiplication Table</title>
 </head>
+
 <body>
-    <script src="./script.js"></script>
+    <h1>Multiplication Table</h1>
+    <script>
+        function tabelaMultiplicacao() {
+                let tabela = []
+                let mult = 0
+
+                for (let i = 0; i <= 10; i++) {
+                    tabela[i] = [i]
+                    for (let j = 0; j <= 10; j++) {
+                        mult = j * i
+                        tabela[i][j] = mult
+                    }
+                }
+                console.table(tabela)
+            }
+    </script>
 </body>
+
 </html>
